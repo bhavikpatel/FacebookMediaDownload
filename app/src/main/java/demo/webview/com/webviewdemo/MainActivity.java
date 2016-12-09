@@ -1,5 +1,7 @@
 package demo.webview.com.webviewdemo;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
@@ -12,12 +14,16 @@ public class MainActivity extends AppCompatActivity {
 
     WebView webview;
     Button btnBack,btnNext;
+    Button btnMenu;
+    Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        context=this;
         btnBack=(Button)findViewById(R.id.btnBack);
         btnNext=(Button)findViewById(R.id.btnNext);
+        btnMenu=(Button)findViewById(R.id.btnMenu);
         webview=(WebView)findViewById(R.id.webview);
         webview.loadUrl("https://m.facebook.com/");
         //webview.loadUrl("https://m.youtube.com/");
@@ -43,6 +49,14 @@ public class MainActivity extends AppCompatActivity {
                 if(webview.canGoForward()){
                     webview.goForward();
                 }
+            }
+        });
+
+        btnMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(context,MediaDownloadOptionsActivity.class);
+                startActivity(intent);
             }
         });
     }

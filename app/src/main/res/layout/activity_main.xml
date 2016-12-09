@@ -39,5 +39,17 @@
         android:layout_below="@+id/lvBar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></WebView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btnMenu"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
 
 </RelativeLayout>
