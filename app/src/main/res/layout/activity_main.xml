@@ -4,10 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="demo.webview.com.webviewdemo.MainActivity">
 
     <LinearLayout
@@ -20,18 +16,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Back"
+            android:visibility="gone"
             android:id="@+id/btnBack"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Next"
+            android:visibility="gone"
             android:id="@+id/btnNext"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Refresh"
+            android:visibility="gone"
             android:id="@+id/btnRefresh"/>
     </LinearLayout>
 
