@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">WebViewDemo</string>
+    <!--Appid-IIT Class Room, banner ad unit-  facebook_downloader-->
     <string name="App_ID">ca-app-pub-6475379749449763~7509026731</string>
     <string name="banner_ad_unit_id">ca-app-pub-6475379749449763/1133093138</string>
-    <!--Appid-IIT Class Room, banner ad unit-  facebook_downloader-->
+    <string name="dstart">Download Start ...</string>
+    <string name="quality">Quality: </string>
+    <string name="stream">STREAM</string>
+    <string name="savevideo">Save Video</string>
+    <string name="saveimage">Save Image</string>
+    <string name="copytext">Copy Text</string>
+    <string name="foldername">mobicodepro</string>
+    <string name="pref_hidenotification">hidenotification</string>
+    <string name="pref_appname">sdfacebook</string>
+
 </resources>

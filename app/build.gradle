@@ -25,5 +25,7 @@ dependencies {
     compile 'com.google.android.gms:play-services-ads:10.0.1'
     compile 'com.google.firebase:firebase-ads:10.0.1'
     testCompile 'junit:junit:4.12'
+    compile 'com.mani:ThinDownloadManager:1.2.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }
 
