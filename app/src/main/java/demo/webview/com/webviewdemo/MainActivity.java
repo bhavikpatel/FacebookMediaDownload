@@ -10,6 +10,10 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Button;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 public class MainActivity extends AppCompatActivity {
 
     WebView webview;
@@ -34,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
 
       //  webview.setWebViewClient(new WebViewClient());
         webview.setWebViewClient(new MyWebViewClient(this));
+
+        MobileAds.initialize(getApplicationContext(), "ca-app-pub-3940256099942544~3347511713");
+
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
